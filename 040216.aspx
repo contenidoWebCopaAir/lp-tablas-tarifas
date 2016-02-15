@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="description" content="Compre su boleto del 5 de febrero de 2016 al 12 de febrero de 2016 y viaje entre del 19 de febrero y el 30 de junio de 2016."/>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Promoción para vuelos de sudamerica. Compre su boleto del 5 de febrero de 2016 al 12 de febrero de 2016 y viaje entre del 19 de febrero y el 30 de junio de 2016."/>
+
+    <meta 
+      name="keywords" 
+      content="copa tiquetes, tarifas de vuelos, tarifas de vuelos internacionales, tarifas vuelos sudamerica, vuelos sudamerica, vuelos a sudamerica, billetes de avion, tiquetes de avion, buscador de vuelos, ofertas de vuelos, aerolinea copa, ofertas viajes, ofertas de viajes, oferta viajes, vuelos copa, copa vuelos, vuelos por copa, vuelos de copa, copaair, copaair ofertas, copaair promociones, tiquetes copa, tiquetes aereos copa"
+    >
+
     <title>Aproveche estas tarifas y viaje</title>
     <link rel="shortcut icon" href="http://www.copaair.com/PublishingImages/favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="http://www.copaair.com/PublishingImages/favicon.ico" type="image/x-icon"/>

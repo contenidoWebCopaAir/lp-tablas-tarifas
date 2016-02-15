@@ -66,7 +66,13 @@ $(function() {
 function buscarVuelos( storeFront ) {
 	v_FROM = $("#DESDE").val();	
 	if (v_FROM == "" || v_FROM == undefined) {
+
+		// Agregar libreria de swit alert
+
+		// Detectar el idioma en la etiqueta html y mostrar el texto adecuado
+
 		alert("Seleccione la ciudad de origen");
+		
 		return false;
 	}
 	v_TO = $("#HACIA").val();
@@ -75,7 +81,8 @@ function buscarVuelos( storeFront ) {
 		return false;
 	}
 	if(v_FROM == v_TO){
-		alert("Seleccione una ciudad de destino diferente a la de origen");
+		swal("Ups!", "Select a destination city different to the origin", "error");
+		//alert("Seleccione una ciudad de destino diferente a la de origen");
 		return false;
 	}
 	
