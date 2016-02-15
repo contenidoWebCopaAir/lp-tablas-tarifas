@@ -270,5 +270,6 @@ select {
 
 .contenidoPromo tr td { padding:0 }
 .contenidoPromo tr td:first-child { width:196px; font-style: italic; font-size: 16px }
+.social_icon { border:none; }
 .logos_footer { width: 842px; border:none; border-spacing: 0; }
 .logos_footer tr td { padding:0; }
