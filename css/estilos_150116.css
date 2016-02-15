@@ -1,0 +1,263 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: 'CalibriRegular';
+    src: url('fonts/calibri-webfont.eot');
+    src: url('fonts/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calibri-webfont.woff') format('woff'),
+         url('fonts/calibri-webfont.ttf') format('truetype'),
+         url('fonts/calibri-webfont.svg#CalibriRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CalibriBold';
+    src: url('fonts/calibrib-webfont.eot');
+    src: url('fonts/calibrib-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calibrib-webfont.woff') format('woff'),
+         url('fonts/calibrib-webfont.ttf') format('truetype'),
+         url('fonts/calibrib-webfont.svg#CalibriBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CalibriItalic';
+    src: url('fonts/calibrii-webfont.eot');
+    src: url('fonts/calibrii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calibrii-webfont.woff') format('woff'),
+         url('fonts/calibrii-webfont.ttf') format('truetype'),
+         url('fonts/calibrii-webfont.svg#CalibriItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#69737b;
+	background-image:url('../images/back.jpg');
+	background-repeat:repeat-x;
+	background-position:50% top;
+}
+.limpiar {
+	clear:both;	
+}
+select, input{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+select {
+	width:160px;
+}
+.canvas_booking {
+	height: 345px;
+	width: 450px;
+	border:#005a9d solid 1px;
+	position: relative;
+}
+
+.canvas_booking .cWhite {
+	width:450px;
+	background-color: #FFF;
+	clear: both;
+}
+.canvas_booking .cBlue {
+	width:430px;
+	height:25px;
+	padding:10px;
+	background-color: #f2f8fc;
+	clear: both;
+}
+.mc_campos_line {
+	padding:10px;	
+}
+.line_sub {
+	width:140px;
+	margin-right:2px;
+	float:left;
+}
+.line_sub select {
+	width:40px;
+}
+.btnInput {
+	width:210px;
+	height:15px;	
+	float:left;	
+}
+.btnInput input{
+	width:60px;
+	float:left;
+	margin-top:5px;
+}
+.btnInput .tText {
+	width:120px;
+	float:left;
+	font-size:10px;
+}
+
+#inputRegreso {
+	margin-left:20px;	
+}
+
+#destino1 {
+	margin-left:15px;
+	float:left;
+	}
+
+#destino2 {
+	float:left;
+	margin-left:10px;
+	}
+.fila1 {
+	padding-left:15px;
+	}
+.tab_content {
+	clear:both;
+	width:100%;	
+}
+.tab_content .colmenu{
+	width: 76px;
+	float:left;	
+}
+.tab_content .colmenu .tit_origem {
+	background-color:#1d3189;
+	font-size: 16px;
+	width: 104px;
+	color:#FFF;
+	height:46px;
+	line-height: 46px;
+	text-indent: 18px;
+}
+.tab_content .colmenu ul{
+	margin:0;
+	padding:0;
+}
+.tab_content .colmenu li{
+	width: 88px;
+	height: 50px;
+	list-style:none;
+	display:block;
+}
+.tab_content .colmenu li:hover{
+	background-image:url('../images/btn_active.png');
+	background-position:right 16px;
+	background-repeat:no-repeat;
+	width:113px;
+	height:50px;
+	list-style:none;
+	display:block;
+}
+.tab_content .colmenu li.active{
+	background-image:url('../images/btn_active.png');
+	background-position: right 16px;
+	background-repeat:no-repeat;
+	width: 113px;
+	height: 50px;
+	list-style:none;
+	display:block;
+}
+.tab_content .colmenu li a{
+	width: 102px;
+	height: 50px;
+	line-height: 50px;
+	background-repeat:no-repeat;
+	background-position:20px 20px;
+	border:solid 1px #dadada;
+	background-color:#f3f3f3;
+	text-indent: 3px;
+	display:block;
+	color:#696969;
+	font-size: 15px;
+	text-align: center;	
+}
+.tab_content .colmenu li a:hover{
+	border:solid 1px #0060aa;
+	background-color:#0060aa;
+	display:block;
+	color:#fff;	
+}
+.tab_content .colmenu li a.active{
+	border:solid 1px #0060aa;
+	background-color:#0060aa;
+	display:block;
+	color:#fff;	
+}
+
+.tab_content .coltabcontent {
+	width: 362px;
+	float:left;
+	margin-left: 46px;
+}
+.coltabcontent table th, .coltabcontent table td {
+	height: 28px;
+	vertical-align:middle;	
+}
+.coltabcontent table th {
+	color:#004199;
+	font-weight:bold;
+	font-size: 14px;
+}
+.coltabcontent sup {
+	vertical-align: super;
+	font-size: 10px;
+}
+.coltabcontent table td {
+	border-bottom:#e0e2e9 solid 1px;
+	font-size: 14px;
+	color:#000;	
+}
+.coltabcontent table tr td.tex_col2{
+	text-decoration:line-through;
+	text-align:center;
+	padding: 8px 0;
+}
+.coltabcontent table tr td.tex_col3{
+	text-align:center;
+}
+#copacom {
+	width:100px;
+	height:23px;
+	float:right;
+	margin: 48px 0px 0 0;
+}	
+#ventas {
+	width:116px;
+	height:90px;
+	float:right;
+	margin:5px 10px 0 0;
+}	
+#call {
+	width:76px;
+	height:90px;
+	float:right;
+	margin:5px 10px 0 0;
+}
+#esposible {
+  width: 960px;
+  height: 100px;
+  float: left;
+  margin-top: 40px;
+}
+#hub {
+  width: 180px;
+  height: 63px;
+  float: left;
+  margin: 5px 0 0 0;
+}
+#copaair {
+  width: 180px;
+  height: 63px;
+  float: right;
+  margin: 5px 0 0 0;
+}
+#contenidopromo{
+   width:490px;
+   height:auto;
+   margin-right:10px;
+   float:left;
+}

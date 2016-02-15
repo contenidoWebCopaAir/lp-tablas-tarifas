@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+a:link {
+	color: #1563A8;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #2096DD;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	color: #1563A8;
+}
+
+#contenedor{
+	width:960px;
+	height:auto;
+	margin:auto;
+	}
+	
+/*Haeder*/
+
+#cabezote{
+	width:845px;
+	height:110px;
+	float:left;
+	margin: 0 57px;	
+}
+.logo_copa{
+	background-image:url('../images/copa_airlines.jpg');
+	background-repeat:no-repeat;
+		}
+		
+#header_logo{
+	width:284px;
+	height:98px;
+	/*background-image: url(images/copa_airlines.jpg);
+	background-repeat:no-repeat;*/
+	background-position:top;
+	float:left;
+	}
+	
+/*Middle */
+
+#cuerpo {
+	width:845px;
+	height:auto;
+	margin:0 57px;
+	float:left;
+	font-family: Calibri, Helvetica, Arial;
+	font-size:14px;
+	text-align:left;
+	}
+#banner{
+	width:842px;
+    height:318px;
+    alignment-adjust:central;
+    margin: 5px 0 0;
+   	background-repeat: no-repeat;
+	}
+#contenido{
+	width:842px;
+	height:auto;
+/*	background-color:#030;*/
+	float:left	
+	}
+#contenido_tarifas{
+	width:490px;
+	height:auto;
+	margin-right:10px;
+	/*background-color:#033;*/
+	float:left		
+	}
+#contenido_lateral_der{
+	width:330px;
+	height:auto;
+	float:right;
+	margin-left:12px;
+}
+.titulos_destacados{
+	font-weight: bold;
+	font-size: 17px;
+	color: #005ca7;
+}
+.titulos_tabla{
+	font-weight: bold;
+	font-size: 14px;
+	color: #1458A6;
+	}
+.tabla_bck_blue{
+	background-color:#e6f5fb;
+	}
+
+/*Footer*/
+
+#legales{
+	width:845px;
+	height:auto;
+	margin:20px 57px 30px 57px;
+	float:left;
+	text-align:justify;
+	font-size:10px;
+	font-weight:lighter;
+	/*background-color: #009*/
+	
+	}
+.derechos{
+	font-size:12px;
+	font-weight:bold}
+
+#pataconectados {
+	width:100%;
+	height:67px;
+	left:-32px;
+	margin:750px 0 500px 0;
+	position:absolute;
+	z-index:2;
+	top: 1298px;
+	}
+#pataconectados_lpcorto {
+	width:100%;
+	height:99px;
+	left:-37px;
+	margin:750px 0 500px 0;
+	position:absolute;
+	z-index:2;
+	top: 479px;
+	}
+#pataconectados_lplargo {
+	width:100%;
+	height:99px;
+	left:1px;
+	margin:750px 0 500px 0;
+	position:absolute;
+	z-index:2;
+	top: 476px;
+	}
+#pataconectados_closed {
+	width:100%;
+	height:105px;
+	left:0;
+	margin:750px 0 500px 0;
+	position:absolute;
+	z-index:2;
+	top: -267px;
+	}
+
+/*	contador y be*/
+
+.contador {
+	width: 240px;
+	margin-top:10px;
+	float:right;
+	text-align:center;
+}
+.contador span {
+	color:#FFF;
+	font-size:18px;
+}
+.contador div.lbhor {
+	color:#FFF;
+	text-align:center;
+	float:left;
+	width:68px;
+	margin-right: 17px;
+	font-size:10px;
+}
+.contador div.lbmin {
+	color:#FFF;	
+	text-align:center;
+	float:left;
+	width:68px;
+	margin-right: 17px;
+	font-size:10px;
+}
+.contador div.lbseg {
+	color:#FFF;
+	text-align:center;
+	float:left;
+	width:68px;
+	font-size:10px;
+}
+#glowingLayout {
+	width: 240px;
+	height:57px;
+	margin-top:3px;
+}
+#glowingLayout span {
+	display: block;
+	float: left;
+	width: 34px;
+	height: 57px;
+	background: url('../../NEW/331/lp%20Peru/lp/images/numbers.png') no-repeat 0px 0px;
+}
+#glowingLayout span.image0 {
+	background-position: -0px 0px;
+}
+#glowingLayout span.image1 {
+	background-position: -34px 0px;
+}
+#glowingLayout span.image2 {
+	background-position: -68px 0px;
+}
+#glowingLayout span.image3 {
+	background-position: -102px 0px;
+}
+#glowingLayout span.image4 {
+	background-position: -136px 0px;
+}
+#glowingLayout span.image5 {
+	background-position: -170px 0px;
+}
+#glowingLayout span.image6 {
+	background-position: -204px 0px;
+}
+#glowingLayout span.image7 {
+	background-position: -238px 0px;
+}
+#glowingLayout span.image8 {
+	background-position: -272px 0px;
+}
+#glowingLayout span.image9 {
+	background-position: -306px 0px;
+}
+#glowingLayout span.imageSep {
+	background-position: -0px 0px;
+	width:10px;
+}
+#glowingLayout span.sec_count {
+	background:none;
+	height:57px;
+	line-height:57px;
+	color:#FFF;
+	width:17px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#canvas_booking {
+	height: 331px;
+	width: 326px;
+	position: relative;
+	background-color:#f5f5f5;
+	font-size:12px;
+	text-align:left
+}
+#canvas_booking select, #canvas_booking input{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+#canvas_booking select {
+	width:140px;
+}
+#canvas_booking .header {
+	height: 41px;
+	width: 326px;
+}
+#canvas_booking .cWhite {
+	/*background-color: #FFF;*/
+	clear: both;
+	margin-top:10px;
+}
+#canvas_booking .cBlue {
+	/*background-color: #f2f8fc;*/
+	clear: both;
+}
+#canvas_booking .mc_campos_line {
+	padding:8px;
+	display:inline-block;	
+}
+#canvas_booking .line_sub {
+	width:100px;
+	float:left;	
+}
+#canvas_booking .line_sub select {
+	width:45px;
+}
+#canvas_booking .btnInput {
+	width:210px;
+	height:15px;	
+	float:left;
+}
+#canvas_booking input.datepicker{
+	width: 130px;
+	padding:3px;
+	background-image: url('../images/iconcal.jpg');
+	background-repeat: no-repeat;
+	background-position: right 0%;
+	border: 1px solid #999999;
+}
+#canvas_booking #inputSalida {
+	float:left;
+}
+#canvas_booking #inputRegreso {
+	float:left;
+	margin-left:10px;	
+}
+#canvas_booking .btnInput .tText {
+	width:120px;
+	float:left;
+	font-size:10px;
+}
+#canvas_booking .btnSubmit {
+	width:179px;
+	clear:both;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#canvas_booking .pasajeros {
+	font-size:10px;	
+}
+#canvas_booking .pasajeros .lbpas {
+	float:left;
+	width:42px;
+	text-align:center;
+	line-height:11px;
+}
+.ui-widget {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 12px;
+}
+
+#ui-datepicker-div { display: none; }
+#copacom {
+	width:100px;
+	height:23px;
+	float:right;
+	margin: 48px 0px 0 0;
+	}
+	
+#ventas {
+	width:114px;
+	height:90px;
+	float:right;
+	margin:5px 10px 0 0;
+	}
+		
+#call {
+	width:76px;
+	height:90px;
+	float:right;
+	margin:5px 10px 0 0;
+	}
