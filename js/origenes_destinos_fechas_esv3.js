@@ -13,7 +13,7 @@ var sysCities = {
 		],
 		"tocities": [
             
-                 {"name":"Asunci&oacute;n, PY","id": "ASU"},
+            {"name":"Asunci&oacute;n, PY","id": "ASU"},
             {"name":"Aruba, AW","id": "AUA"},
             {"name":"Barranquilla, CO", "id":"BAQ"},
             {"name":"Belo Horizonte, BR", "id":"CNF"},

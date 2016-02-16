@@ -68,19 +68,21 @@
           <div>
             <div id="canvas_booking">
               <div class="header"> <img src="images/tit_booking_ES.jpg" width="326" height="45" alt="Booking es"/></div>
-              <div class="cWhite">
-                <div class="mc_campos_line">
-                  <input name="radIdaVuelta" type="radio" value="RT" checked="checked"/>
-                  Ida y vuelta  
-                  <input name="radIdaVuelta" type="radio" class="positioner_one" value="OW"/>
-                  Una Vía</div>
+                <div class="cWhite">
+                  <div class="mc_campos_line">
+                    <input name="radIdaVuelta" type="radio" value="RT" checked="checked"/>
+                    Ida y vuelta  
+                    <input name="radIdaVuelta" type="radio" class="positioner_one" value="OW"/>
+                    Una Vía
+                  </div>
                 </div>
                 <div class="cBlue">
                   <div class="mc_campos_line">
                     <select class="mc_field_1" id="DESDE" name="DESDE"><option value="0" selected="selected">Desde</option></select>
-                     
-                    <select class="mc_field_1" id="HACIA" name="HACIA"><option value="0">Hacia</option></select></div>
+                    <select class="mc_field_1" id="HACIA" name="HACIA"><option value="0">Hacia</option></select>
+                  </div>
                 </div>
+
                 <div class="cWhite">
                   <div class="mc_campos_line">
                     <input type="radio" value="Business" name="cabinClass" />
@@ -89,9 +91,19 @@
                     Clase económica </div>
                   </div>
                   <div class="cBlue">
-                    <div class="mc_campos_line"> <span id="inputSalida"> Salida<br/><input name="from" class="mc_field_2 datepicker" id="from" size="15"/></span><span id="inputRegreso">Regreso<br/><input name="to" class="mc_field_2 datepicker" id="to" size="15"/></span></div>
+                    <div class="mc_campos_line"> 
+                      <span id="inputSalida"> Salida<br/>
+                        <input name="from" class="mc_field_2 datepicker" id="from" size="15"/>
+                      </span>
+                      <span id="inputRegreso">Regreso<br/>
+                        <input name="to" class="mc_field_2 datepicker" id="to" size="15"/>
+                      </span>
+                    </div>
                 </div>
                
+                <!-- Errores del formulario -->  
+                <div class="error_msj"></div>
+
                   <div class="cWhite">
                     <div class="mc_campos_line pasajeros">
                       <div id="adultPassengers" class="line_sub">
@@ -111,9 +123,13 @@
                         </div>
                         <div class="cWhite">
                           <div class="btnSubmit">
-                            <input name="coupon" id="coupon" type="hidden" value=""/><a id="btnSubmit"><img width="179" height="36" style="border:none" src="images/btn_bookin_ES.jpg" alt="Booking"/></a></div>
+                            <input name="coupon" id="coupon" type="hidden" value=""/>
+                            <a id="btnSubmit">
+                              <img width="179" height="36" style="border:none" src="images/btn_bookin_ES.jpg" alt="Booking"/>
+                            </a>
                           </div>
-                          <div class="limpiar"></div>
+                        </div>
+                        <div class="limpiar"></div>
                         </div>
                       </div> 
 
@@ -165,7 +181,7 @@
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
       <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-      <script src="js/jquery.ui.datepicker-en.js"></script>
+      <script src="js/jquery.ui.datepicker-es.js"></script>
       <script src="http://www.copaair.com/sites/CC/interactivelibrary/promocion/js/jquery.countdown.js"></script>
       <script src="js/jquery.history.js"></script>
       <script src="js/sweetalert.min.js"></script>
