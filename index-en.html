@@ -64,93 +64,109 @@
         <div id="contenido_lateral_der">
           <div>
             <div id="canvas_booking">
-              <div class="header"> <img src="images/tit_booking_EN.jpg" width="326" height="45"  alt="Booking en"/></div>
-              <div class="cWhite">
-                <div class="mc_campos_line">
-                  <input name="radIdaVuelta" type="radio" value="RT" checked="checked" />
-                  Roundtrip&nbsp;&nbsp;
-                  <input name="radIdaVuelta" type="radio" class="positioner_one" value="OW" />
-                  One-way</div>
-                </div>
-                <div class="cBlue">
-                  <div class="mc_campos_line">
-                    <select class="mc_field_1" id="DESDE" name="DESDE">
-                      <option value="0" selected>From</option>
-                    </select>
-                    &nbsp;
-                    <select class="mc_field_1" id="HACIA" name="HACIA">
-                      <option value="0">To</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="cWhite">
-                  <div class="mc_campos_line">
-                    <input type="radio" value="Business" name="cabinClass" />
-                    Bussiness class
-                    <input type="radio" value="Economy" name="cabinClass" checked="checked"/>
-                    Economy class</div>
-                  </div>
-                  <div class="cBlue">
-                    <div class="mc_campos_line"> <span id="inputSalida"> Departure<br />
-                      <input name="from" class="mc_field_2 datepicker" id="from" size="15" />
-                    </span><span id="inputRegreso">Return<br />
-                    <input name="to" class="mc_field_2 datepicker" id="to" size="15" />
-                  </span></div>
-                </div>
-                  <div class="cWhite">
-                    <div class="mc_campos_line pasajeros">
-                      <div id="adultPassengers" class="line_sub">
-                        <div class="lbpas">Adults<br />
-                          (12+)</div>
-                          <select class="select" id="pasajeros" name="pasajeros">
-                            <option value="1" selected="selected">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                          </select>
+                <div class="header"> <img src="images/tit_booking_EN.jpg" width="326" height="45"  alt="Booking en"/></div>
+                <form id="bookinForm" method="GET" action="prueba.html">
+                    <div class="cWhite">
+                        <div class="mc_campos_line">
+                            <input name="radIdaVuelta" type="radio" value="RT" checked="checked" />
+                            Roundtrip&nbsp;&nbsp;
+                            <input name="radIdaVuelta" type="radio" class="positioner_one" value="OW" />
+                            One-way
                         </div>
-                        <div id="pasajerosninos" class="line_sub">
-                          <div class="lbpas">Children<br />
-                            (2 - 11)</div>
-                            <select class="select" id="cbpasajerosninos" name="cbpasajerosninos">
-                              <option value="0" selected="selected">0</option>
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                            </select>
-                          </div>
-                          <div id="infantesPasajeros" class="line_sub">
-                            <div class="lbpas">Infants<br />
-                              (0 - 1)</div>
-                              <select class="select" id="cbinfantesPasajeros" name="cbinfantesPasajeros">
-                                <option value="0" selected="selected">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                              </select>
+                    </div>
+                    
+                    <div class="cBlue">
+                      <div class="mc_campos_line">
+                        <select class="mc_field_1" id="DESDE" name="DESDE" required>
+                          <option value="0" selected>From</option>
+                        </select>
+                        &nbsp;
+                        <select class="mc_field_1" id="HACIA" name="HACIA" required>
+                          <option value="0">To</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="cWhite">
+                        <div class="mc_campos_line">
+                            <input type="radio" value="Business" name="cabinClass" />
+                            Bussiness class
+                            <input type="radio" value="Economy" name="cabinClass" checked="checked"/>
+                            Economy class
+                        </div>
+                    </div>
+
+                    <div class="cBlue">
+                        <div class="mc_campos_line">
+                            <span id="inputSalida"> Departure<br />
+                                <input name="from" class="mc_field_2 datepicker" id="from" size="15" required/>
+                            </span>
+                            <span id="inputRegreso">Return<br />
+                                <input name="to" class="mc_field_2 datepicker" id="to" size="15" required/>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="cWhite">
+                        <div class="mc_campos_line pasajeros">
+                            <div id="adultPassengers" class="line_sub">
+                                <div class="lbpas">Adults<br />(12+)</div>
+                                <select class="select" id="pasajeros" name="pasajeros">
+                                    <option value="1" selected="selected">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
                             </div>
-                            <div class="limpiar"></div>
-                          </div>
-                        </div>
+                            <div id="pasajerosninos" class="line_sub">
+                                <div class="lbpas">Children<br />(2 - 11)</div>
+                                <select class="select" id="cbpasajerosninos" name="cbpasajerosninos">
+                                    <option value="0" selected="selected">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                              </div>
+                              <div id="infantesPasajeros" class="line_sub">
+                                <div class="lbpas">Infants<br />(0 - 1)</div>
+                                    <select class="select" id="cbinfantesPasajeros" name="cbinfantesPasajeros">
+                                        <option value="0" selected="selected">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                    </select>
+                                </div>
+                                <div class="limpiar"></div>
+                            </div>
+                        </div><!-- white -->
+
                         <div class="cWhite">
-                          <div class="btnSubmit">
-                            <input name="coupon" id="coupon" type="hidden" value="" />
-                            <a id="btnSubmit"><img width="179" height="36" style="border:none" src="images/btn_bookin-EN.jpg" alt="Booking" /></a></div>
-                          </div>
+                            <div class="btnSubmit">
+                                <!-- <input name="coupon" id="coupon" type="hidden" value="" /> -->
+                                
+                                <button type="submit">
+                                    <img width="179" height="36" style="border:none" src="images/btn_bookin-EN.jpg" alt="Booking" />
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </form>
+                  
+                       
                           <div class="limpiar"></div>
                         </div>
                       </div> 
@@ -221,10 +237,10 @@
       <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
       <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-      <script src="js/jquery.ui.datepicker-en.js"></script>
+      <script src="js/jquery.ui.datepicker-es.js"></script>
       <script src="http://www.copaair.com/sites/CC/interactivelibrary/promocion/js/jquery.countdown.js"></script>
       <script src="js/jquery.history.js"></script>
-      <script src="js/sweetalert.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
       <script src="js/origenes_destinos_fechas_esv3.js"></script>
       <script src="js/pcfunctions_150216.js"></script>
       <script src="https://www.copaair.com/sites/CC/interactivelibrary/promocion/flashsale-pa/js/s_code.js"></script>
