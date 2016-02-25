@@ -1,7 +1,6 @@
 // JavaScript Document
 $(function() {
 	
-
 	$.each(sysCities.fromcities, function (index, value) {
 		$("#DESDE").append('<option value="'+value.id+'">'+value.name+'</option>');
 	});
@@ -69,31 +68,84 @@ $(function() {
 	
 });
 function buscarVuelos( storeFront ) {
+	var lang = $("html").attr('lang');
 	v_FROM = $("#DESDE").val();	
-	if (v_FROM == "" || v_FROM == undefined) {
-		alert("Seleccione la ciudad de origen");
+	if (v_FROM == "" || v_FROM == undefined || v_FROM == 0) {
+
+		switch( lang ){
+			case 'es':
+				alert( msj.es.city_origin_null );
+				break;
+			case 'en':
+				alert( msj.en.city_origin_null );
+				break;
+			case 'pt':
+				alert( msj.pt.city_origin_null );
+				break;
+		}
+		
 		return false;
 	}
 	v_TO = $("#HACIA").val();
 	if (v_TO == "" || v_TO == undefined || v_TO == 0) {
-		alert("Seleccione la ciudad de destino");
+		switch( lang ){
+			case 'es':
+				alert( msj.es.destination_city_null );
+				break;
+			case 'en':
+				alert( msj.en.destination_city_null );
+				break;
+			case 'pt':
+				alert( msj.pt.destination_city_null );
+				break;
+		}
 		return false;
 	}
 	if(v_FROM == v_TO){
-		alert("Seleccione una ciudad de destino diferente a la de origen");
+		switch( lang ){
+			case 'es':
+				alert( msj.es.origin_destination );
+				break;
+			case 'en':
+				alert( msj.en.origin_destination );
+				break;
+			case 'pt':
+				alert( msj.pt.origin_destination );
+				break;
+		}
 		return false;
 	}
 	
 	v_FROMDATE = $("#from").val();
 	if (v_FROMDATE == "" || v_FROMDATE == undefined) {
-		alert("Seleccione su fecha de salida");
+		switch( lang ){
+			case 'es':
+				alert( msj.es.departure_date );
+				break;
+			case 'en':
+				alert( msj.en.departure_date );
+				break;
+			case 'pt':
+				alert( msj.pt.departure_date );
+				break;
+		}
 		return false;
 	}
 	v_radIdaVuelta = $('input:radio[name=radIdaVuelta]:checked').val();
 	if(v_radIdaVuelta == "RT"){
 		v_TODATE = $("#to").val();
 		if (v_TODATE == "" || v_TODATE == undefined) {
-			alert("Seleccione su fecha de regreso");
+			switch( lang ){
+			case 'es':
+				alert( msj.es.return_date );
+				break;
+			case 'en':
+				alert( msj.en.return_date );
+				break;
+			case 'pt':
+				alert( msj.pt.return_date );
+				break;
+		}
 			return false;
 		}
 	}else{
